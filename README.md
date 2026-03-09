@@ -8,33 +8,33 @@ Each query lives in its own file under `splunk/` or `timesketch/`.
 
 ---
 
-## 🔍 Query Index
+## Query Index
 
 | # | Tool | Query Name | Tags | Last Validated | Author |
 |---|------|------------|------|---------------|--------|
-| 1 | Splunk | [iCloud Account Name Lookup](splunk/2024-03_icloud-account-name.md) | `icloud` `account` `identity` | 2024-03-01 | @analyst1 |
-| 2 | Timesketch | [Running Process List at Event Time](timesketch/2024-03_running-process-list.md) | `process` `execution` `runtime` | 2024-03-05 | @analyst2 |
+| 1 | Splunk | [iCloud Account Name Lookup](splunk/2026-03_icloud-account-name.md) | `icloud` `account` `identity` | 2026-03-01 | @analyst1 |
+| 2 | Timesketch | [Running Process List at Event Time](timesketch/2026-03_running-process-list.md) | `process` `execution` `runtime` | 2026-03-05 | @analyst2 |
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 /
-├── README.md                  ← You are here (the index)
+├── README.md
 ├── splunk/
 │   ├── _TEMPLATE.md
-│   └── 2024-03_icloud-account-name.md
+│   └── 2026-03_icloud-account-name.md
 ├── timesketch/
 │   ├── _TEMPLATE.md
-│   └── 2024-03_running-process-list.md
+│   └── 2026-03_running-process-list.md
 └── fields/
-    └── README.md              ← Field dictionary (known log fields)
+    └── README.md
 ```
 
 ---
 
-## 🏷️ Tag Reference
+## Tag Reference
 
 | Tag | Meaning |
 |-----|---------|
@@ -44,7 +44,3 @@ Each query lives in its own file under `splunk/` or `timesketch/`.
 | `execution` | Code/binary execution events |
 | `identity` | User or account identification |
 | `runtime` | System state at a point in time |
-
----
-
-*For questions, ping the team in #logarchive-investigation.*
