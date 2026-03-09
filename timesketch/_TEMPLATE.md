@@ -1,4 +1,4 @@
-# _TEMPLATE — Timesketch Query
+# _TEMPLATE - Timesketch Query
 
 > Copy this file, rename it `YYYY-MM_short-description.md`, fill it in, open a PR.
 
