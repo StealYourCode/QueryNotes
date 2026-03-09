@@ -23,7 +23,7 @@ index=logarchive sourcetype=logarchive_events
 | `icloud_account_name` | The Apple ID / iCloud email associated with the event | `john.doe@icloud.com` |
 | `device_id` | Unique identifier of the device | `ABCD1234EFGH5678` |
 | `event_type` | Type of iCloud account event observed | `sign_in`, `sign_out`, `token_refresh` |
-| `category` | Log category — filter on `icloud` to scope results | `icloud` |
+| `category` | Log category - filter on `icloud` to scope results | `icloud` |
 
 ## Expected Output
 - **Normal:** One or two account names per device, consistent over time.
@@ -33,8 +33,8 @@ index=logarchive sourcetype=logarchive_events
 Written during initial logarchive mapping to understand what account identity fields were available. Confirmed that `icloud_account_name` is reliably populated for sign-in and token refresh events, but absent on some background sync events. Used to link a device to an account in subsequent investigations.
 
 ## Notes / Gotchas
-- `icloud_account_name` may be null for background sync events — use `| where isnotnull(icloud_account_name)` to filter those out if needed.
-- Field name may vary across logarchive versions — check `fields/README.md` for known aliases.
+- `icloud_account_name` may be null for background sync events - use `| where isnotnull(icloud_account_name)` to filter those out if needed.
+- Field name may vary across logarchive versions - check `fields/README.md` for known aliases.
 - For time-boxed investigations, always add an earliest/latest constraint to avoid scanning the full index.
 
 ---
