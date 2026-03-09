@@ -27,7 +27,7 @@ data_type:"logarchive:process_event" AND event_type:"process_start" AND process_
 | `pid` | Process ID assigned at runtime | `1234` |
 | `parent_pid` | PID of the parent process | `1` |
 | `event_type` | Type of process event | `process_start`, `process_exit` |
-| `data_type` | Logarchive data type — use to scope to process events | `logarchive:process_event` |
+| `data_type` | Logarchive data type - use to scope to process events | `logarchive:process_event` |
 
 ## Expected Output
 - **Normal:** System binaries (`launchd`, `kernel_task`, `loginwindow`) with expected paths under `/usr/` or `/System/`.
@@ -37,7 +37,7 @@ data_type:"logarchive:process_event" AND event_type:"process_start" AND process_
 Written to establish a process baseline during logarchive mapping. Discovered that `process_path` is only populated for `process_start` events, not `process_exit`. Used to identify a suspicious binary running from a user's temp directory during an incident review. The `parent_pid` field was key in reconstructing the execution chain.
 
 ## Notes / Gotchas
-- `process_path` is absent on some `process_exit` events — always filter on `event_type:"process_start"` for reliable path data.
+- `process_path` is absent on some `process_exit` events - always filter on `event_type:"process_start"` for reliable path data.
 - Label interesting processes directly in Timesketch using the star/label feature so teammates can see your annotations without re-running the query.
 - For deep process tree reconstruction, combine with the Splunk parent/child PID query (see `splunk/` folder).
 
