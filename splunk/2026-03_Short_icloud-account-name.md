@@ -1,7 +1,7 @@
-## Q3 - [One line: what it finds]
+## QS - ICloud logged account
 **Tool:** Splunk
 **Tags:** `icloud` `account` `identity`
-**Author:** @handle · **Date:** 2026-03-09
+**Author:** @StealYourCode · **Date:** 2026-03-09
 
 **When to use:** When searching for logged Icloud Account
 
