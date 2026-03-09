@@ -10,10 +10,10 @@ Each query lives in its own file under `splunk/` or `timesketch/`.
 
 ## Query Index
 
-| # | Tool | Query Name | Tags | Last Validated | Author |
-|---|------|------------|------|---------------|--------|
-| 1 | Splunk | [iCloud Account Name Lookup](splunk/2026-03_icloud-account-name.md) | `icloud` `account` `identity` | 2026-03-01 | @analyst1 |
-| 2 | Timesketch | [Running Process List at Event Time](timesketch/2026-03_running-process-list.md) | `process` `execution` `runtime` | 2026-03-05 | @analyst2 |
+| Tool | Query Name | Tags | Last Validated | Author |
+|------|------------|------|---------------|--------|
+| Splunk | [iCloud Account Name Lookup](splunk/2026-03_icloud-account-name.md) | `icloud` `account` `identity` | 2026-03-01 | @analyst1 |
+| Timesketch | [Running Process List at Event Time](timesketch/2026-03_running-process-list.md) | `process` `execution` `runtime` | 2026-03-05 | @analyst2 |
 
 ---
 
